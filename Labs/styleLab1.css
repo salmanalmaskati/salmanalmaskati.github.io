@@ -1,0 +1,26 @@
+body{
+   background-image: url("https://www.supercars.net/blog/wp-content/uploads/2017/07/Porsche-911-Turbo-S-Exclusive-Series-4k-Wallpaper.jpg");
+   background-position:center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+
+}
+
+h1{
+    color:rgb(107, 102, 102)
+}
+
+h2{
+    color:#091a46
+}
+
+p{
+    text-align:center;
+    color:rgb(227, 171, 54)
+
+}
+
+ul > li {
+    
+    color:#027f23
+}
