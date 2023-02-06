@@ -1,7 +1,7 @@
 body{
-   background-image: url("https://www.supercars.net/blog/wp-content/uploads/2017/07/Porsche-911-Turbo-S-Exclusive-Series-4k-Wallpaper.jpg");
+   background-image:url("https://www.supercars.net/blog/wp-content/uploads/2017/07/Porsche-911-Turbo-S-Exclusive-Series-4k-Wallpaper.jpg");
    background-position:center;
-   background-repeat: no-repeat;
+background-repeat: no-repeat;
    background-attachment: fixed;
 
 }
@@ -11,25 +11,41 @@ h1{
 }
 
 h2{
-    color:#1e4ab9
+    color:#34568B
 }
 
 h3{ 
-    color:rgb(107, 102, 102)
+    color: #FF6F61
 }
 
 
 p{
     text-align:center;
-    color:rgb(227, 171, 54)
+    color:#88B04B;
+    font-weight: bold;
 
 }
 
 ul {
     
-    color:#027f23
+    color:#6B5B95
 }
 
 li{
-    color:#027f23
+    font-weight: bold ;
+    color:#6B5B95
+    
 }
+
+table, td, th {
+    border: 1px solid;
+    color:#F7CAC9;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
