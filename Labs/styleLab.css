@@ -1,10 +1,15 @@
+
+
 body{
-    background-image:url("https://4kwallpapers.com/images/wallpapers/porsche-911-turbo-s-black-background-amoled-pitch-black-3840x2160-7730.jpg");
+    background: url(Meteor.svg);
+    
+    background-size: cover;
    background-position:center;
-    background-repeat: no-repeat;
+  
    background-attachment: fixed;
 
 }
+
 
 h1{
     color:#b5c2c7 
@@ -54,8 +59,11 @@ img{
     margin-left: -6px;
     width: 100%;
 
+
 }
 
+
+/*slideshow container */
 
 #image-container{
     position: relative;
@@ -65,6 +73,8 @@ img{
 
 }
 
+/*slideshow images */
+
 #pic {
     width: auto;
     height: auto;
@@ -73,4 +83,26 @@ img{
     
   }
 
+/*slideshow description text */
+  #description{ 
+    color: #9d7463;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+  }
 
+
+.model_desc{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: #9d7463;
+}
+
+.model_desc:hover{
+    color: red;
+}
+
+.models:hover{
+    opacity: 0.5;
+}
