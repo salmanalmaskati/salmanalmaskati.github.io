@@ -14,8 +14,10 @@ const description =['911 GT3 RS Tribute to Carrera RS Package makes first U.S. a
 '911 GT3 – 30 Years of Porsche Supercup: Passion for detail'
 ]
 
-let i=0
+pic=document.getElementById("pic")
+
 function change(){
+    let i=0
     pic.setAttribute('src', urls[i]);
     desc = document.getElementById("description")
     desc.innerHTML = description[i]
