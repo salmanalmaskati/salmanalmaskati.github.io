@@ -1,5 +1,5 @@
 body{
-   background-image:url("https://4kwallpapers.com/images/wallpapers/porsche-911-turbo-s-black-background-amoled-pitch-black-3840x2160-7730.jpg");
+    background-image:url("https://4kwallpapers.com/images/wallpapers/porsche-911-turbo-s-black-background-amoled-pitch-black-3840x2160-7730.jpg");
    background-position:center;
     background-repeat: no-repeat;
    background-attachment: fixed;
@@ -49,10 +49,28 @@ img{
 
 
 
-
 .container{
 
     margin-left: -6px;
     width: 100%;
 
 }
+
+
+#image-container{
+    position: relative;
+    text-align: center;
+
+    
+
+}
+
+#pic {
+    width: auto;
+    height: auto;
+
+
+    
+  }
+
+
