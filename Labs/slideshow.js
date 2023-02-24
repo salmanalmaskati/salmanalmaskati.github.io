@@ -15,9 +15,10 @@ const description =['911 GT3 RS Tribute to Carrera RS Package makes first U.S. a
 ]
 
 
+let i=0
 
 function change(){
-    let i=0
+    const pic = document.getElementById('pic');
     pic.setAttribute('src', urls[i]);
     desc = document.getElementById("description")
     desc.innerHTML = description[i]
@@ -28,6 +29,7 @@ function change(){
     setTimeout(change,20000)
 
     }
+
 
 change()
 
