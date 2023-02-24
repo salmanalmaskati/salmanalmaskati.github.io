@@ -14,7 +14,7 @@ const description =['911 GT3 RS Tribute to Carrera RS Package makes first U.S. a
 '911 GT3 – 30 Years of Porsche Supercup: Passion for detail'
 ]
 
-pic=document.getElementById("pic")
+
 
 function change(){
     let i=0
