@@ -1,0 +1,108 @@
+
+
+body{
+    background: url(Meteor.svg);
+    
+    background-size: cover;
+   background-position:center;
+  
+   background-attachment: fixed;
+
+}
+
+
+h1{
+    color:#677b83 
+}
+
+h2{
+    color:#dfdbd8
+}
+
+h3{ 
+    color: #9d7463
+}
+
+
+p{
+    text-align:center;
+    color:#565c5e ;
+    font-weight: bold;
+
+}
+
+ul {
+    
+    color:#455954
+}
+
+li{
+    font-weight: bold ;
+    color:#455954
+    
+}
+
+table, td, th {
+    border: 1px solid;
+    color:#9d7463;
+}
+
+img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.container{
+
+    margin-left: -6px;
+    width: 100%;
+
+
+}
+
+
+/*slideshow container */
+
+#image-container{
+    position: relative;
+    text-align: center;
+
+    
+
+}
+
+/*slideshow images */
+
+#pic {
+    width: auto;
+    height: auto;
+
+
+    
+  }
+
+/*slideshow description text */
+  #description{ 
+    color: #9d7463;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+  }
+
+
+.model_desc{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: #9d7463;
+}
+
+.model_desc:hover{
+    color: red;
+}
+
+.models:hover{
+    opacity: 0.5;
+}

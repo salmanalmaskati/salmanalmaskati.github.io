@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Lab 4</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styleLab.css">
+
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+    <style>
+      .toggler { width: 500px; height: 200px; position: relative; }
+      #button { padding: .5em 1em; text-decoration: none; }
+      #effect { width: 240px; height: 170px; padding: 0.4em; position: relative; background: #ffffff00; }
+      #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  
+
+  
+  </head>
+
+  
+  
+  <body onload="change()"> 
+    
+
+    
+     
+    
+
+  <header>
+    
+    <nav class="navbar navbar-dark" style="background-color: #696969c0;">
+        <a class="navbar-brand" href="#">Porsche
+          <img src="https://www.carlogos.org/car-logos/porsche-logo-950x1100.png" alt="logo" width="30" height="30" class="d-inline-block align-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="homeLab.html">Welcome Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Models">Models</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="#SpecsAndPricing">Specs & Pricing</a>
+            </li>
+          </ul>
+              </div>
+
+          
+   
+      </nav>
+
+  </header>
+
+
+
+
+  
+
+
+
+  
+    <div class="container-xxl">
+        <div id="image-container" class="row-xxl">
+            <div class="row-xxl">
+              <img src="https://press.porsche.com/download/prod/presse_pag/PressBasicData.nsf/Download?OpenAgent&attachmentid=2385111&show=1" alt="slideshow1" id="pic">
+            </div>
+            
+          <script src="slideshow.js"></script>
+          </div>
+          
+
+
+
+      <div id="description" class="col-sm">
+        
+      </div>
+      <br>
+      <br>
+      <br>
+        <div id="name" class="col-sm">
+            <h1 style="text-align: center;">PORSCHE <br> Salman AlMaskati</h1>
+      
+        
+        
+
+
+
+
+        <div class="row-xxl">
+        <h2 id='Models' style="color:#b5c2c7 "> &nbsp; Models</h2>
+        </div>
+
+
+        <div class="row">
+            <div class="col">
+           <h1>911 models</h1>
+           
+           <img class="models" src="https://press.porsche.com/download/prod/presse_pag/PressBasicData.nsf/Download?OpenAgent&attachmentid=2226090&show=1" alt='911' style="height: 400px; width: 600px;">
+           
+           <p class="model_desc"> Porsche 911 Sport Classic</p>
+
+
+
+            </div>
+            <div class="col">
+                <h1>718 models</h1>
+                <img class="models" src="https://press.porsche.com/download/prod/presse_pag/PressBasicData.nsf/Download?OpenAgent&attachmentid=1574346&show=1" alt="718" style="height: 400px; width: 600px;">
+                <p class="model_desc"> 718 Cayman GT4 </p>
+            </div>
+        <div class="col">
+            <h1>Taycan models</h1>
+            <img class="models" src="https://press.porsche.com/download/prod/presse_pag/PressBasicData.nsf/Download?OpenAgent&attachmentid=1951754&show=1" alt="Taycan" style="height: 400px; width: 600px;">
+            <p class="model_desc"> Taycan </p>
+        </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col">
+           <h1>Cayenne models</h1>
+           <img class="models" src="https://press.porsche.com/download/prod/presse_pag/PressBasicData.nsf/Download?OpenAgent&attachmentid=1804721&show=1" alt="Cayenne" style="height: 400px; width: 600px;">
+           <p class="model_desc"> Cayenne GTS </p>
+           
+
+            </div>
+            <div class="col">
+                <h1>Macan models</h1>
+                <img class="models" src="https://press.porsche.com/download/prod/presse_pag/PressBasicData.nsf/Download?OpenAgent&attachmentid=2178246&show=1" alt="Macan" style="height: 400px; width: 600px;">
+                <p class="model_desc"> Macan T </p>
+               
+            </div>
+            <div class="col">
+                <h1>Panamera Models</h1>
+                <img class="models" src="https://press.porsche.com/download/prod/presse_pag/PressBasicData.nsf/Download?OpenAgent&attachmentid=2157399&show=1" alt="Panamera" style="height: 400px; width: 600px;">
+                <p class="model_desc"> Porsche Panamera in Maritim Blue </p>
+            </div>
+   
+        </div>
+
+        <div class="row-xs">
+            <h1>Specs & Pricing</h1>
+            <table id='SpecsAndPricing' style="width: 100%;"> 
+
+
+
+                <tr>
+                    <th rowspan="6"> 911</th>
+                    <th> Model</th> 
+                    <th> Horsepower</th> 
+                    <th> Top speed </th>
+                    <th> MSRP </th>
+            
+                </tr>
+            
+            
+            
+            <tr>
+                <td> 911 Carrera </td>
+                <td> 379 hp </td>
+                <td> 294 km/h</td>
+                <td> CA $129,600</td>
+            </tr> 
+            
+            <tr>
+                <td> 911 Targa 4S</td>
+                <td> 443 hp</td>
+                <td> 304 km/h </td>
+                <td> CA $168,200</td>
+            </tr>
+            
+            <tr>
+                <td> 911 Careera GTS</td>
+                <td> 473 hp</td>
+                <td> 311 km/h </td>
+                <td> CA $162,800 </td>
+            </tr>
+            
+            <tr>
+                <td> 911 Turbo</td>
+                <td> 572 hp</td>
+                <td> 320 km/h </td>
+                <td> CA $213,900 </td>
+            </tr>
+            
+            <tr>
+                <td> 911 GT3 </td>
+                <td> 502 hp</td>
+                <td> 318 km/h </td>
+                <td> CA $194,300 </td>
+            </tr>
+            
+            
+                
+            
+            
+            </table>
+            
+            </div>
+        
+        </div>
+
+    </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Lab 3</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styleLab.css">
+
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+    <style>
+      .toggler { width: 500px; height: 200px; position: relative; }
+      #button { padding: .5em 1em; text-decoration: none; }
+      #effect { width: 240px; height: 170px; padding: 0.4em; position: relative; background: #ffffff00; }
+      #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  
+    <script>
+      $( function() {
+        var state = true;
+        $( "#button" ).on( "click", function() {
+          if ( state ) {
+            $( "#effect" ).animate({
+              backgroundColor: "#ffffff00",
+              color: "#fff",
+              width: 500
+            }, 1000 );
+          } else {
+            $( "#effect" ).animate({
+              backgroundColor: "#ffffff00",
+              color: "#fff",
+              width: 240
+            }, 1900 );
+          }
+          state = !state;
+        });
+      } );
+      </script>
+  
+  </head>
+
+  
+  
+  <body> 
+
+  <header>
+    
+    <nav class="navbar navbar-dark" style="background-color: #1d1d1d;">
+        <a class="navbar-brand" href="#">Porsche
+          <img src="https://www.carlogos.org/car-logos/porsche-logo-950x1100.png" alt="logo" width="30" height="30" class="d-inline-block align-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="homeLab.html">Welcome Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Models">Models</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="#SpecsAndPricing">Specs & Pricing</a>
+            </li>
+          </ul>
+              </div>
+
+          
+   
+      </nav>
+
+  </header>
+
+
+
+
+
+  
+    <div class="container-xxl">
+        <div id="name" class="col-sm">
+      
+        <h1 style="text-align: center;"> PORSCHE </h1>
+        <h2 style="text-align:center;"> Salman AlMaskati </h2> 
+        
+    <div class="toggler">
+      <div id="effect" class="ui-widget-content ui-corner-all">
+        <h3 class="ui-widget-header ui-corner-all">Porshce</h3>
+        <p>
+          Winning Together
+        </p>
+      </div>
+    </div>
+     
+    <button id="button" class="ui-state-default ui-corner-all" style="background-color: #ffffff00; color: #9d7463;">Toggle Effect</button>
+        </div>
+
+        <div class="row-xxl">
+        <h2> History</h2>
+
+        <p>Ferdinand Porsche (1875–1951) founded the company called "Dr. Ing. h. c. F. Porsche GmbH"[4] with Adolf Rosenberger[5] and Anton Piëch in 1931.[6] The main offices was at Kronenstraße 24 in the centre of Stuttgart.[7] Initially, the company offered motor vehicle development work and consulting,[4] but did not build any cars under its own name. One of the first assignments the new company received was from the German government to design a car for the people; that is, a Volkswagen.[4] This resulted in the Volkswagen Beetle, one of the most successful car designs of all time.[8] The Porsche 64 was developed in 1939 using many components from the Beetle.[4] </p>
+
+        </div>
+
+        <div class="row-xxl">
+        <h2 id='Models' style="color:#b5c2c7 "> &nbsp; Models</h2>
+        </div>
+
+
+        <div class="row">
+            <div class="col">
+            <h3> &nbsp; 911  Models</h3>
+        <ul>
+            <li>911 Carrera </li>
+            <li> 911 Targa 4S </li>
+            <li> 911 Carrea GTS </li>
+            <li> 911 Turbo </li>
+            <li> 911 GT3 </li>
+            
+        </ul>
+
+        <h3> &nbsp; Taycan Models </h3>
+            <ul> 
+                <li>Taycan 4S </li>
+                <li> Taycan GTS </li>
+                <li> Taycan Turbo </li>
+                <li> Taycan Turbo S </li> 
+            </ul>
+
+            <h3> &nbsp; Cayenne Models </h3>
+            <ul>
+                <li> Cayenne Coupe </li>
+                <li> Cayenne S </li>
+                <li> Cayenne Turbo </li> 
+                <li> Cayenne GT </li>
+            </ul>
+            </div>
+            <div class="col">
+            <h3> &nbsp; 718 Models </h3>
+            <ul>
+                <li> 718 Cayman </li>
+                <li> 718 Boxter </li>
+                <li> 718 Spyder </li>
+                <li>718 Cayman GT4 RS</li> 
+            </ul>
+    
+            <h3> &nbsp; Panamera Models </h3>
+                <ul>
+                    <li> Panamera 4S</li>
+                    <li> Panamera GTS </li>
+                    <li> Panamera Turbo S </li> 
+                </ul>
+    
+                <h3> &nbsp; Macan Models</h3>
+                <ul>
+                    <li> Macan S </li>
+                    <li> Macan GTS </li>
+                </ul> 
+            </div>
+        </div>
+
+        <div class="row-xs">
+        <table id='SpecsAndPricing' style="width: 100%;"> 
+
+
+
+            <tr>
+                <th rowspan="6"> 911</th>
+                <th> Model</th> 
+                <th> Horsepower</th> 
+                <th> Top speed </th>
+                <th> MSRP </th>
+        
+            </tr>
+        
+        
+        
+        <tr>
+            <td> 911 Carrera </td>
+            <td> 379 hp </td>
+            <td> 294 km/h</td>
+            <td> CA $129,600</td>
+        </tr> 
+        
+        <tr>
+            <td> 911 Targa 4S</td>
+            <td> 443 hp</td>
+            <td> 304 km/h </td>
+            <td> CA $168,200</td>
+        </tr>
+        
+        <tr>
+            <td> 911 Careera GTS</td>
+            <td> 473 hp</td>
+            <td> 311 km/h </td>
+            <td> CA $162,800 </td>
+        </tr>
+        
+        <tr>
+            <td> 911 Turbo</td>
+            <td> 572 hp</td>
+            <td> 320 km/h </td>
+            <td> CA $213,900 </td>
+        </tr>
+        
+        <tr>
+            <td> 911 GT3 </td>
+            <td> 502 hp</td>
+            <td> 318 km/h </td>
+            <td> CA $194,300 </td>
+        </tr>
+        
+        
+            
+        
+        
+        </table>
+        
+        </div>
+
+    </div>
+
+
+
+
+</body>
+</html>
