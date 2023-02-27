@@ -1,0 +1,25 @@
+body{
+    background-image: url("Curve\ Line.svg");
+}
+
+h1{
+    font-family:'Courier New', monospace;
+
+    text-align: center;
+    color: rgb(83, 83, 83);
+}
+
+h5{
+    color:rgb(32, 51, 110); ;
+    
+    text-align: center;
+    font-family:'Courier New', monospace;
+}
+.navbar{
+    font-family:'Courier New', monospace;
+    background-color: rgba(0, 0, 0, 0.354);
+}
+
+.nav-link{
+    color:rgb(32, 51, 110)
+}
