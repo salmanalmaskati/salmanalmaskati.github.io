@@ -1,11 +1,16 @@
 
 let text= "Salman AlMaskati "
 let text2 ="Data Scientist / Data Analyst"
+let text3 = "Github URL: salmanalmaskati.github.io"
+let imageURL=[
+    "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+    "https://w7.pngwing.com/pngs/276/472/png-transparent-linkedin-computer-icons-blog-logo-watercolor-butterfly-angle-text-rectangle.png"
+]
 
 let i =0
 let y = 0 
 let v=0
-
+let position =0
 
 
 
@@ -44,5 +49,48 @@ function type2 (){
 
 type2()
 
+
+function type3 (){
+    if(v < text3.length){
+        git=document.getElementById("intro3")
+        git.innerHTML+=text3.charAt(v)
+        v++
+       
+        
+
+
+    }
+    setTimeout(type3,60)
+   
+}
+type3()
+/*
+function pic(){
+ var githubpic = document.createElement("img");
+
+ githubpic.setAttribute("src", imageURL[0]);
+
+ var githublink = document.createElement("a");
+
+ githublink.setAttribute("href", "https://github.com/salmanalmaskati");
+
+ githublink.appendChild(githubpic);
+
+ var container = document.getElementById("con");
+ container.appendChild(githublink);
+
+
+
+ /* styling 
+ githubpic.style.width ='40px'
+ githubpic.style.height ='40px'
+ githubpic.style.display= 'block'
+ githubpic.style.margin= '0 auto'
+ githubpic.style.border = "dashed orange"
+}
+
+
+setTimeout(pic,2500)
+*/
 
 
