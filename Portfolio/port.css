@@ -1,6 +1,8 @@
 body{
+    background-color: #9ba5b4;
+    /*
     background-image: url("Curve\ Line.svg");
-    background-repeat: repeat-y;
+    background-repeat: repeat-y;*/
 }
 
 h1{
@@ -14,6 +16,11 @@ h1{
 h2{
     font-family:'Courier New', monospace;
     color: rgb(83, 83, 83);
+}
+
+h3{
+    font-family:'Courier New', monospace;
+    color: rgb(32, 51, 83);
 }
 p{
     font-family:'Courier New', monospace;
@@ -49,4 +56,9 @@ h6{
 }
 #foot{
     text-align: center;
+}
+
+ul{
+    color:rgb(32,51,110);
+    font-family:'Courier New', monospace;
 }
