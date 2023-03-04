@@ -70,6 +70,7 @@
         <h3>Objective:</h3>
         <p>A Unix shell program (i.e. script) called "calc" to simulate a calculator. 
         </p>
+        <a href="https://replit.com/@salmanalmaskati/Calculator#calc.sh"> <p> Try the program</p> </a>
       </div>
     </div>
     <div class="row">
@@ -87,8 +88,31 @@
     </div>
     <div class="row">
       <div class="col-md-12">
+        <h3>Code snippet</h3>
+        <code>if [ "${operator}" == 'MS' ] #save sum to MS ask for operator again<br>
+            then<br>
+              ms=${sum}<br>
+              echo "${ms} -> M"<br>
+              read -p "Enter Operator: " operator<br>
+              #if [ "${operator}" == 'X' ] #exit<br>
+              #then<br>
+                #echo 'Good Bye'<br>
+                #exit<br>
+              #fi<br>
+             
+            fi<br>
+            
+            while [ "${operator}" == 'M+' ]<br>
+            do<br>
+              m_plus=$(( ${ms} + ${sum} ))<br>
+              echo "${ms} + ${sum} = ${m_plus} -> M"<br>
+              ms=${m_plus}<br>
+              sum=${ms}<br>
+              read -p "Enter Operator: " operator<br>
+              break<br>
+            done</code>
         <h3>Sample Output</h3>
-        <a href="https://replit.com/@salmanalmaskati/Vending-Machine#pop.c"> <p> Try the program</p> </a>
+        
         <img style="height: 500px; width: auto;" src="Pics/bashcalc.png" alt="calc">
         
       </div>
