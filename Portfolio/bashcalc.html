@@ -59,22 +59,44 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
 
-
 <div class="container">
     <div class="row">
-      <div class="col-md-12"><h1>Bash: Calculator &emsp;&emsp; <br> <a class="btn btn-outline-dark" href="portfolio.html" role="button">Go back</a>
-    </h1> </div>
+      <div class="col-md-12">
+        <h1>Bash: Calculator &emsp;&emsp; <br> <a class="btn btn-outline-dark" href="portfolio.html" role="button">Go back</a>
+        </h1> 
+    </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
-        <h3>Objective:</h3>
+      <div  class="col-md-6"> <h3>Objective:</h3>
         <p>A Unix shell program (i.e. script) called "calc" to simulate a calculator. 
         </p>
-        <a href="https://replit.com/@salmanalmaskati/Calculator#calc.sh"> <p> Try the program</p> </a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
+        <a href="https://replit.com/@salmanalmaskati/Calculator#main.sh"> <p> Try the program</p> </a>
+        <h3>Sample Output</h3>
+        <p>
+        Enter Operand: 3<br>
+        Enter Operator: +<br>
+        Enter Operand: 4<br>
+        3 + 4 = 7<br>
+        Enter Operator: -<br>
+        Enter Operand: 12<br>
+        7 - 12 = -5<br>
+        Enter Operator: MS<br>
+        -5 -> M<br>
+        Enter Operator: *<br>
+        Enter Operand: 3<br>
+        -5 * 3 = -15<br>
+        Enter Operator: C<br>
+        Results cleared<br>
+        Enter Operand : /<br>
+        Enter Operator : 0<br>
+        0 is not valid<br>
+        Enter Operator: X<br>
+        Good Bye
+        </p>
+
+         
+</div>
+      <div class="col-md-6">
         <h3>Highlights of the project:</h3>
         <ul>
             <li> Memory Store (MS) fucntion</li>
@@ -84,40 +106,29 @@
             <li> Simple Arithmetic such as (+,-,*,/)</li>
             
         </ul>
-    </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
         <h3>Code snippet</h3>
-        <code>if [ "${operator}" == 'MS' ] #save sum to MS ask for operator again<br>
+        <code>
+            if [ "${operator}" == '/' ] #divide<br>
             then<br>
-              ms=${sum}<br>
-              echo "${ms} -> M"<br>
-              read -p "Enter Operator: " operator<br>
-              #if [ "${operator}" == 'X' ] #exit<br>
-              #then<br>
-                #echo 'Good Bye'<br>
-                #exit<br>
-              #fi<br>
-             
-            fi<br>
-            
-            while [ "${operator}" == 'M+' ]<br>
+            while [ "${loop_operand}" == 0 ] #if 0 <br>
             do<br>
-              m_plus=$(( ${ms} + ${sum} ))<br>
-              echo "${ms} + ${sum} = ${m_plus} -> M"<br>
-              ms=${m_plus}<br>
-              sum=${ms}<br>
-              read -p "Enter Operator: " operator<br>
-              break<br>
-            done</code>
-        <h3>Sample Output</h3>
-        
-        <img style="height: 500px; width: auto;" src="Pics/bashcalc.png" alt="calc">
-        
-      </div>
+                echo "Can't divide by zero.  Please re-enter divisor."<br>
+                read -p "Enter Operand: " loop_operand <br>
+            done<br>
+                if [ ${loop_operand} > 0 ] #if greater than 0<br>
+                then<br>
+                echo "${sum} / ${loop_operand} = $(( ${sum} / ${loop_operand} ))"<br>
+                sum=$(( ${sum} / ${loop_operand} ))<br>
+                fi<br>
+            
+        </code>
+
+    
+    </div>
     </div>
   </div>
+
+
 </body>
 
 </html>

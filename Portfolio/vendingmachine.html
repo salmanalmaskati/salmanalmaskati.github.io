@@ -59,22 +59,42 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
 
-
 <div class="container">
-    <div class="row">
-      <div class="col-md-12"><h1>C:Vending Machine &emsp;&emsp; <br> <a class="btn btn-outline-dark" href="portfolio.html" role="button">Go back</a>
-    </h1> </div>
+  <div class="row">
+    <div class="col-md-12"><h1>C:Vending Machine &emsp;&emsp; <br> <a class="btn btn-outline-dark" href="portfolio.html" role="button">Go back</a></div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">Column 1
+      <h3>Objective:</h3>
+      <p>A C program which simulates the controls and operation of a soft drink vending machine.</p>
+      <h3>Sample Output</h3>
+      <p>
+        ./main 40<br>
+        Welcome to my C Pop Machine!<br>
+        Pop is 40 centimes. Please insert any combination of nickels [N or n], dimes [D or d] or Pentes [P or p]. You can also press R or r for coin return.<br>
+        Enter coin (NDPR): P<br>
+        Pente detetced<br>
+        You have inserted a total of 20 centimes
+        Please insert 20 more centimes.<br>
+        Enter coin (NDPR) : N<br>
+        Nickle detetced<br>
+        You have inserted a total of 25 centimes
+        Please insert 15 more centimes.<br>
+        Enter coin (NDPR) : D<br>
+        Dime detetced<br>
+        You have inserted a total of 35 centimes
+        Please insert 5 more centimes.<br>
+        Enter coin (NDPR) : P<br>
+        Pente detetced<br>
+        You have inserted a total of 55 centimes<br>
+        Pop is dispensed. Thank you for your business! Please come again.<br>
+        Change given: 15 centimes as 1 dimes and 1 nickle
+      </p>
+
+
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h3>Objective:</h3>
-        <p>A C program which simulates the controls and operation of a soft drink vending machine. 
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h3>Highlights of the project:</h3>
+    <div class="col-md-6">Column 2
+      <h3>Highlights of the project:</h3>
         <ul>
             <li> Start the program using Command Line Arguments</li>
             <li> Detect and classify amount inputed correctly</li>
@@ -82,22 +102,27 @@
             <li>Dispense drink</li>
             
         </ul>
-    </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h3>Sample Output</h3>
-        <h5 style="text-align: left;"> Comments:</h5>
-        <ul>
-            <li>To start the program input ./main "number" for example "./main 40"</li>
-            <li>To exit the program input 'E'</li>
-        </ul>
-        <a href="https://replit.com/@salmanalmaskati/Vending-Machine#pop.c"> <p> Try the program</p> </a>
-        <img style="height: 500px; width: auto;" src="Pics/coutput.png" alt="KNN">
-        
-      </div>
+      <h3>Code Snippet</h3>
+      <code>
+        if (money=='R' || money=='r'){ <br>
+          calc_price=0;<br>
+          calc_total=total;<br> 
+          if (calc_total%2==0){<br>
+            calc_total/=10;<br>
+            printf("\nChange given: %d centimes as %d dime(s) and 0 nickle(s)\n",total, calc_total);<br>
+            
+            }<br>
+          else{<br>
+            calc_total/=10; //NUMBER OF DIMES REMAINING WILL ALWAYS BE 1 NICKLE<br>
+            printf("\nChange given: %d centimes as %d dimes and 1 nickle",total, calc_total);<br>
+      </code>
+
+
+
     </div>
   </div>
+</div>
+
 </body>
 
 </html>

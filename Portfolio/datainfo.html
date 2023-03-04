@@ -59,38 +59,60 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
 
-
 <div class="container">
-    <div class="row">
-      <div class="col-md-12"><h1>Data Information and Management:<br>
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Data Information and Management:<br>
         SQL Project &emsp;&emsp; <a class="btn btn-outline-dark" href="portfolio.html" role="button">Go back</a>
-    </h1> </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h3>Objective:</h3>
-        <p>The objective of this project was to create and populate a data base on Microsoft SQL Server.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h3>Highlights of the project:</h3>
-        <ul>
-            <li> Populate the data base</li>
-            <li> Create an Entity Relationship Diagram</li>
-            <li>Test queries on the data base </li>
-        </ul>
-    </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h3>Results</h3>
-        <a href="https://drive.google.com/drive/folders/1Pd6g4FYQVDeqtdyBQe6ktxd8ZWUuAcQx?usp=share_link"> <p> For a more in depth report please click here</p> </a>
-        <img style="height: 500px; width: 700px;" src="Pics/ERD.png" alt="ERD">
-        <p>Entity Relationship Diagram</p>
-      </div>
+    </h1> 
     </div>
   </div>
+  <div class="row">
+    <div  class="col-md-6">
+      <h3>Objective:</h3>
+      <p>The objective of this project was to create and populate a data base on Microsoft SQL Server.</p>
+      <h3>Results</h3>
+      <a href="https://drive.google.com/drive/folders/1Pd6g4FYQVDeqtdyBQe6ktxd8ZWUuAcQx?usp=share_link"> <p> For a more in depth report please click here</p> </a>
+      <img style="height: 300px; width: auto;" src="Pics/ERD.png" alt="ERD">
+      <p>Entity Relationship Diagram</p>
+
+    
+
+    </div>
+    <div class="col-md-6">
+      
+      <h3>Highlights of the project:</h3>
+      <ul>
+          <li> Populate the data base</li>
+          <li> Create an Entity Relationship Diagram</li>
+          <li>Test queries on the data base </li>
+      </ul>
+
+      <h3> Query Snippet</h3>
+      <code>
+        SELECT DISTINCT COUNT(actor.actnumb) as 'Actors in action movies after 2010' <br>
+        FROM actor inner join role <br>
+        ON actor.actnumb = role.actnumb inner join movie <br>
+        ON role.mvnumb = movie.mvnumb <br>
+        WHERE mvtype = 'Action'and yearmade > 2010 <br>
+      <br>
+        SELECT * FROM movie inner join director <br>
+        ON movie.dirnumb = director.dirnumb inner join role <br>
+        ON movie.mvnumb = role.mvnumb inner join actor <br>
+        ON role.actnumb = actor.actnumb <br>
+        WHERE dirname = 'Lana Wachowski'and actname = 'Keanu Reeves' <br>
+        ORDER BY movie.mvtitle <br>
+
+
+
+
+      </code>
+    
+    </div>
+  </div>
+</div>
+
+
 </body>
 
 </html>

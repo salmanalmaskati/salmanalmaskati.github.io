@@ -1,41 +1,52 @@
-body{
-    background-color: #9ba5b4;
-    /*
-    background-image: url("Curve\ Line.svg");
-    background-repeat: repeat-y;*/
-}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-image: url('Pics/wave.svg');
+    background-color: black;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  
 
 h1{
     font-family:'Courier New', monospace;
 
     text-align: center;
-    color: rgb(83, 83, 83);
+    color: #00539CFF
 }
 
 
 h2{
     font-family:'Courier New', monospace;
-    color: rgb(83, 83, 83);
+    color: #EEA47FFF
 }
 
 h3{
     font-family:'Courier New', monospace;
-    color: rgb(32, 51, 83);
+
+    color: #EEA47FFF
 }
 p{
     font-family:'Courier New', monospace;
-    color: rgb(83, 83, 83);
+    font-weight: bold;
+    color: rgb(32,51,110);;
 }
 
 h5{
-    color:rgb(32, 51, 110); ;
-    
+    color:#EEA47FFF;
     text-align: center;
     font-family:'Courier New', monospace;
 }
 
 h6{
-    color:rgb(32, 51, 110); ;
+    color:#EEA47FFF;
     
     text-align: center;
     font-family:'Courier New', monospace;
@@ -66,3 +77,9 @@ h4{
     color:rgb(32,51,110);
     font-family:'Courier New', monospace;
 }
+
+hr.rounded {
+        border-top: 5px solid rgb(31, 35, 89);
+        border-radius: 5px;
+}
+    

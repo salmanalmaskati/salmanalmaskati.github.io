@@ -61,51 +61,60 @@
   </script>
 
 <div class="container">
-    <div class="row">
-      <div class="col-md-12"><h1>Business Intelligence and Analytics:<br>
-        R-Studio Project &emsp;&emsp; <a class="btn btn-outline-dark" href="portfolio.html" role="button">Go back</a>
-    </h1> </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h3>Objective:</h3>
-        <p>Determine the likelihood of a customer being approved for a credit card</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h3>Highlights of the project:</h3>
-        <ul>
-            <li> Data is already clean</li>
-        
-                <li> Divide data into two sets (training and test data)</li>
-                
-               <li>Construct a decision tree based on ALL attributes </li>
-                
-               <li>Construct a formula based on the attributes that output the highest accuracy </li>
-                
-                <li>Construct a decision tree based on TOP 5 attributes</li>
-                
-               <li>Generate the precision and recall</li> 
-                
-                <li>Generate confusion matrix</li>
-        </ul>
-    </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h3>Results</h3>
-        <a href="https://drive.google.com/drive/folders/1zDKUwCs1nblSlueftHrWlaYosjzdPVjD?usp=share_link"> <p> For a more in depth report please click here</p> </a>
-        <img style="height: 500px; width: 500px;" src="Pics/Allatr.png">
-        <img style="height: 500px; width: 500px;" src="Pics/Top5.png"></div>
+  <div class="row">
+    <div style="text-align: center;" class="col-md-12"> 
+      <h1>Business Intelligence and Analytics:<br>
+        R-Studio Project <a class="btn btn-outline-dark" href="portfolio.html" role="button">Go back</a>
+
     </div>
   </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Objective:</h3>
+      <p>Determine the likelihood of a customer being approved for a credit card</p>
+      <a href="https://drive.google.com/drive/folders/1zDKUwCs1nblSlueftHrWlaYosjzdPVjD?usp=share_link"> <p> For a more in depth report please click here</p> </a>
+      <h3>Results</h3>
+      <img style="height: 300px; width: 300px;" src="Pics/Allatr.png">
+      <img style="height: 300px; width: 300px;" src="Pics/Top5.png">
+    </div>
 
 
-  
+    <div class="col-md-6">
+      <h3>Highlights of the project:</h3>
+      <ul>
+          <li> Data is already clean</li>
+      
+              <li> Divide data into two sets (training and test data)</li>
+              
+             <li>Construct a decision tree based on ALL attributes </li>
+              
+             <li>Construct a formula based on the attributes that output the highest accuracy </li>
+              
+              <li>Construct a decision tree based on TOP 5 attributes</li>
+              
+             <li>Generate the precision and recall</li> 
+              
+              <li>Generate confusion matrix</li>
+      </ul>
+
+      <h3> Code Snippet</h3>
+      <code>
+      library(ISLR)<br>
+      attach(credit)<br>
+      smp_siz = floor(0.80*nrow(credit))<br>
+      set.seed(123)<br>
+      train_ind = sample(seq_len(nrow(credit)),size = smp_siz)<br>
+      train =credit[train_ind,]<br>
+      test=credit[-train_ind,]<br>
+      View(test)<br>
+      View(train)<br>
+      </code>
 
 
 
+    </div>
+  </div>
+</div>
 
 
 

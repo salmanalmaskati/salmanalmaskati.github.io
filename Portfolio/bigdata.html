@@ -58,22 +58,26 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
-
-
 <div class="container">
     <div class="row">
       <div class="col-md-12"><h1>Big Data Analytics:<br>
         Pandas Project &emsp;&emsp; <a class="btn btn-outline-dark" href="portfolio.html" role="button">Go back</a>
-    </h1> </div>
+</div>
     </div>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-6">
         <h3>Objective:</h3>
         <p>Conducted exploratory analysis and implemented K-Nearest Neighbor (KNN), Support Vector Machine (SVM), and decision tree algorithms to teach the model</p>
+        <h3>Results</h3>
+        <p>Implementted K-NN, SVM, and decision tree</p>
+        <a href="https://drive.google.com/drive/folders/1L9wDx5fzYmzpQYbnePxzAuYs4rNQlQ4B?usp=share_link"> <p> For a more in depth look at the code please click here</p> </a>
+        <img style="height: 300px; width: 300px;" src="Pics/k-nn.png" alt="KNN">
+        <img style="height: 300px; width: 300px;" src="Pics/scattermatrix.png" alt="KNN">
+        <p>K-NN calssifier on K=3,5,7,9,11 &emsp;&emsp;&emsp;&emsp; Scatter Matrix</p>
+
+
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-6">
         <h3>Highlights of the project:</h3>
         <ul>
             <li> Cleaning data</li>
@@ -83,19 +87,20 @@
             <li>Train SVM (Support Vector Machine) and its accuracy</li>
             <li>Creating a decision tree</li>
         </ul>
-    </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h3>Results</h3>
-        <p>Implementted K-NN, SVM, and decision tree</p>
-        <a href="https://drive.google.com/drive/folders/1L9wDx5fzYmzpQYbnePxzAuYs4rNQlQ4B?usp=share_link"> <p> For a more in depth look at the code please click here</p> </a>
-        <img style="height: 500px; width: 500px;" src="Pics/k-nn.png" alt="KNN">
-        <img style="height: 500px; width: 500px;" src="Pics/scattermatrix.png" alt="KNN">
-        <p>K-NN calssifier on K=3,5,7,9,11 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Scatter Matrix</p>
+
+        <h3> Code Snippet</h3>
+        <code> 
+            from pandas.plotting import scatter_matrix<br>
+            from matplotlib import cm<br>
+            cmap = cm.get_cmap('gnuplot')<br>
+            scatter = scatter_matrix(x, c = y, marker = 'o', s=40, hist_kwds={'bins':15}, figsize=(9,9), cmap = cmap)<br>
+        </code>
+
       </div>
     </div>
   </div>
+  
+
 </body>
 
 </html>
