@@ -63,6 +63,7 @@ h6{
     color:rgb(255, 255, 255)
 }
 
+
 .nav-link:hover{
     color: #EEA47FFF;
 }
@@ -102,6 +103,6 @@ hr.rounded {
 }
 
 #code{
-    color: #00ff01;
+    color: #e76363;
     font-weight: bold;
 }
