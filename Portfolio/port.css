@@ -5,10 +5,16 @@ html, body {
   }
   
   body {
-    background-image: url("Pics/pexels-felix-mittermeier-4644812.jpg");
-    background-size: cover;
-    position: relative;
-  }
+    /*background-image: url("Pics/pexels-felix-mittermeier-4644812.jpg");
+    */
+    background-image: linear-gradient(to right top, #09203f, #1b3454, #2d4a69, #3f607f, #537895);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: #464646;
+        }
+  
   
   
 
@@ -32,7 +38,7 @@ h3{
 }
 p{
     font-family:'Courier New', monospace;
-    font-weight: bold;
+    
     color: rgb(255, 255, 255);;
 }
 
@@ -88,4 +94,14 @@ hr.rounded {
 
 .logo:hover{
     opacity: 0.5;
+}
+
+#erd{
+    width: 100%;
+  max-width: 100%;
+}
+
+#code{
+    color: #00ff01;
+    font-weight: bold;
 }

@@ -34,7 +34,7 @@
               <a class="nav-link" href="#">Portfolio<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
          
          
@@ -68,12 +68,12 @@
     </div>
   </div>
   <div class="row">
-    <div  class="col-md-6">
+    <div class="col-md-6">
       <h3>Objective:</h3>
       <p>The objective of this project was to create and populate a data base on Microsoft SQL Server.</p>
       <h3>Results</h3>
       <a href="https://drive.google.com/drive/folders/1Pd6g4FYQVDeqtdyBQe6ktxd8ZWUuAcQx?usp=share_link"> <p> For a more in depth report please click here</p> </a>
-      <img style="height: 300px; width: auto;" src="Pics/ERD.png" alt="ERD">
+      <img id="erd" style="height: 300px;" src="Pics/ERD.png" alt="ERD">
       <p>Entity Relationship Diagram</p>
 
     
@@ -89,7 +89,7 @@
       </ul>
 
       <h3> Query Snippet</h3>
-      <code>
+      <code id="code">
         SELECT DISTINCT COUNT(actor.actnumb) as 'Actors in action movies after 2010' <br>
         FROM actor inner join role <br>
         ON actor.actnumb = role.actnumb inner join movie <br>
