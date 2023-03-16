@@ -1,0 +1,139 @@
+body{
+    background-color: #000000;
+}
+
+.background-image{
+    padding: 0;
+    margin: 0;
+    
+    background-image: url('Pics/im3rd-media-HlJuQDBh3w4-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    overflow-x: scroll;
+}
+
+
+
+  h1{
+    font-family: monospace;
+  }
+
+  p{
+    color: #676767;
+    font-family: monospace;
+  }
+  #title {
+    color: #d8a28c;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+  }
+  
+  #title span {
+    transition: 0.5s ease-out;
+  }
+  #title:hover span:nth-child(1) {
+    margin-right: 5px;
+  }
+  #title:hover span:nth-child(2) {
+    margin-left: 30px;
+  }
+  #title:hover span {
+    color: #fbfbfb;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffffff;
+  }
+
+
+.navbar{
+    font-family: monospace;
+    background-color: rgba(0, 0, 0, 0.354);
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: rgb(63, 63, 63);
+}
+h5{
+    color: hsl(0, 0%, 100%);
+    font-family: monospace;
+}
+
+.container{
+    text-align: center;
+    color: white;
+
+}
+
+
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+  }
+
+.col-md-3:hover{
+    opacity: 0.6;
+    border: 1px solid white;
+}
+
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: auto;
+    margin-left:auto ;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    border:5px solid #ffffff8b;
+    ;
+
+    
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .overlay h2 {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .col-12, .col-md-4, .col-md-6 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  
+.col-md-4.col-sm-6{
+    height: 90%;
+}
