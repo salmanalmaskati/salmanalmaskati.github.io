@@ -106,3 +106,8 @@ hr.rounded {
     color: #e76363;
     font-weight: bold;
 }
+ 
+table, td, th {
+    border: 1px solid;
+    color:#ffffff;
+}

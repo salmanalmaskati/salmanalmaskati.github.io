@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Titanic Data Analysis</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="port.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+
+    <nav class="navbar navbar-expand-lg" style="background-color: rgba(240, 248, 255, 0);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color: #EEA47FFF;" >Salman AlMaskati</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="skills.html">Skills</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+         
+         
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+  </header>
+  <main>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12"><h1>Titanic Data Analysis  <br> <a class="btn btn-outline-dark" href="portfolio.html" role="button">Go back</a></div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Objective:</h3>
+      <p>
+        Developed a machine learning model to predict the survival of passengers. Through this project, I have gained insights into the factors that influenced survival rates and built a model that can accurately predict survival outcomes for future similar events.
+      </p>
+      
+
+      <p>View full <a href=TitanicAnalysis-Colaboratory.pdf>notebook</a>.</p>
+    <h3>Sample Output</h3>
+      <table>
+        <tr>
+            <th colspan="3" style="text-align: center;"> Model Accuracy</th>
+        </tr>
+
+        <tr>
+            <th> Model</th> 
+            <th> Training Score</th> 
+            <th> Test Score </th>
+        </tr>
+    
+    
+    
+    <tr>
+        <td> KNN </td>
+        <td> 0.73 </td>
+        <td> 0.71</td>
+    </tr> 
+
+    <tr>
+        <td> Decison Tree </td>
+        <td>1</td>
+        <td> 0.83</td>
+
+    </tr> 
+
+    <tr>
+        <td> SVM </td>
+        <td> 0.63 </td>
+        <td> 0.69</td>
+
+    </tr> 
+
+    
+
+    
+
+    
+
+      </table>
+     
+      <br>
+
+
+      <table>
+
+        <tr>
+            <th colspan="3" style="text-align: center;"> Actual vs Predictied</th>
+        </tr>
+
+        <tr>         
+            <th> Index</th> 
+            <th> Survived</th>
+            <th>Predictied Survived</th>
+        </tr>
+    
+    <tr>
+        <td> 1 </td>
+        <td> 1 </td>
+        <td>1</td>
+ 
+    </tr> 
+
+    <tr>
+        <td> 6 </td>
+        <td>0</td>
+        <td>0</td>
+
+    </tr> 
+
+    <tr>
+        <td> 16 </td>
+        <td>0</td>
+        <td>0</td>
+    </tr> 
+    
+
+    <tr>
+        <td> 22 </td>
+        <td>1</td>
+        <td>1</td>
+    </tr> 
+
+    <tr>
+        <td> 27 </td>
+        <td> 0</td>
+        <td>1</td>
+    </tr> 
+
+    <tr>
+        <td> 31 </td>
+        <td>1</td>
+        <td>1</td>
+    </tr> 
+
+    
+
+    
+
+    
+
+      </table>
+     
+
+
+    </div>
+    <div class="col-md-6">
+      <h3>Highlights of the project:</h3>
+        <ul>
+            <li> Cleaned Data </li>
+            <li> Visualized Data</li>
+            <li>Developed a machine learning model</li>
+            <li>Applied KNN algorithm to classify data points based on their proximity to other data points. </li>
+            <li>Implemented SVM algorithm to classify data points into different classes</li>
+            <li>Constructed a decision tree to predict the target variable based on a set of features.</li>
+            
+        </ul>
+      <h3>Code Snippet</h3>
+      <code id="code">
+        numrows=len(df)<br>
+        cabinNAs=df['Cabin'].isna().sum()<br>
+        ageNAs= df['Age'].isna().sum()<br>
+        print(f"The number of NA's in the Cabin coloumn is {cabinNAs} out of {numrows}")<br>
+        print(f"The number of NA's in the Age coloumn is {ageNAs} out of {numrows}")<br>
+        ... 
+        <br>
+        final_df= pd.DataFrame(X_test['PassengerId'])<br>
+        final_df['Survived Predictions'] = y_pred<br>
+        final_df<br>
+
+            
+       
+      </code>
+
+
+
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
