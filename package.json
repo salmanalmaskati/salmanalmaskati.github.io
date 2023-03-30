@@ -1,0 +1,14 @@
+{
+  "name": "webapps",
+  "version": "1.0.0",
+  "description": "lab assignments ",
+  "main": "lab6.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Salman AlMaskati",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^5.1.0"
+  }
+}
