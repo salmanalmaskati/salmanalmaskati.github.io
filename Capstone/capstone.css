@@ -26,7 +26,6 @@
 
 .background-image-re{
   background-image: linear-gradient(to right top, #09203f, #1b3454, #2d4a69, #3f607f, #537895);
-  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -157,3 +156,14 @@ hr.rounded {
 .col-md-4.col-sm-6{
     height: 90%;
 }
+
+  
+  .overlay h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .overlay p {
+    font-size: 18px;
+    text-align: center;
+  }
