@@ -1,0 +1,239 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+  padding: 0;
+  }
+  
+  .background-image {
+    padding: 0;
+    margin: 0;
+    background-image: url('Pics/pergola-g0a266f559_1920.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    overflow: auto;
+  }
+  
+
+
+
+
+#main h1{
+    font-weight: bold;
+    font-family:monospace;
+
+      color: white;
+      text-align: center;
+  }
+  .cards-list {
+      z-index: 0;
+      width: 71%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: auto;
+  }
+  .card{
+  margin: 30px auto;
+      width: 300px;
+      height: 260px;
+      border-radius: 50px 0;
+      box-shadow: 0px 0px 15px rgb(0 0 0 / 30%);
+      cursor: pointer;
+      transition: 0.4s;
+      justify-content: flex-start !important;
+    background-color: #97A9BD;
+  }
+  
+  .card_image{
+      
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin: 10px auto;
+  }
+  .card_image i{ 
+      margin: 17px;
+      font-size: 37px;
+    
+  
+  }
+  
+  
+   .card_title .heading {
+      font-size: 1.2rem;
+      font-weight: 700;
+         margin: auto;
+      text-align: center;
+         color: #fff;
+  }
+  .card_title p {
+      margin: 10px auto;
+      line-height: normal;
+    text-align: center;
+        color: #fff;
+  }
+
+  .cards-list .card:nth-child(1):hover {
+   background-color: #5e6e80;
+  }
+  
+  .cards-list .card1 .card_image a i{
+    color: #97A9BD;
+   
+  }
+  
+  .cards-list .card:nth-child(2) {
+      background-color: #A197BD;
+  }
+  .cards-list .card:nth-child(2):hover {
+   background-color: #625682;
+  }
+  .cards-list .card2 .card_image a i{
+    color: #A197BD;
+   
+  }
+  .cards-list .card:nth-child(3) {
+      background-color: #BDA697;
+  }
+  .cards-list .card:nth-child(3):hover {
+   background-color: #826552;
+  }
+  .cards-list .card3 .card_image a i{
+    color:#BDA697;
+   
+  }
+
+  .card4 {
+    margin: 30px auto;
+    width: 300px;
+    height: 260px;
+    border-radius: 50px 0;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 30%);
+    cursor: pointer;
+    transition: 0.4s;
+    justify-content: flex-start !important;
+    background-color: #BD97A9;
+  }
+  
+  .card5 {
+    margin: 30px auto;
+    width: 300px;
+    height: 260px;
+    border-radius: 50px 0;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 30%);
+    cursor: pointer;
+    transition: 0.4s;
+    justify-content: flex-start !important;
+    background-color: #A8BDA6;
+  }
+  
+  .card6 {
+    margin: 30px auto;
+    width: 300px;
+    height: 260px;
+    border-radius: 50px 0;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 30%);
+    cursor: pointer;
+    transition: 0.4s;
+    justify-content: flex-start !important;
+    background-color: #97BDA8;
+  }
+  
+  .card7 {
+    margin: 30px auto;
+    width: 300px;
+    height: 260px;
+    border-radius: 50px 0;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 30%);
+    cursor: pointer;
+    transition: 0.4s;
+    justify-content: flex-start !important;
+    background-color: #C5BDA6;
+  }
+  
+  .card4 .card_image a i {
+    margin: 17px;
+    font-size: 37px;
+    color: #BD97A9;
+  }
+  
+  .card5 .card_image a i {
+    margin: 17px;
+    font-size: 37px;
+    color: #A8BDA6;
+  }
+  
+  .card6 .card_image a i {
+    margin: 17px;
+    font-size: 37px;
+    color: #97BDA8;
+  }
+  
+  .card7 .card_image a i {
+    margin: 17px;
+    font-size: 37px;
+    color: #C5BDA6;
+  }
+  
+  .cards-list .card:nth-child(4):hover {
+    background-color: #80655E;
+  }
+  
+  .cards-list .card4 .card_image a i {
+    color: #BD97A9;
+  }
+  
+  .cards-list .card:nth-child(5) {
+    background-color: #A6BDA8;
+  }
+  
+  .cards-list .card:nth-child(5):hover {
+    background-color: #526258;
+  }
+  
+  .cards-list .card5 .card_image a i {
+    color: #A8BDA6;
+  }
+  
+  .cards-list .card:nth-child(6) {
+    background-color: #A897BD;
+  }
+  
+  .cards-list .card:nth-child(6):hover {
+    background-color: #5f3e7e;
+  }
+  
+  .cards-list .card6 .card_image a i {
+    color: #97BDA8;
+  }
+  
+  .cards-list .card:nth-child(7) {
+    background-color: #A6C5BD;
+  }
+  
+  .cards-list .card:nth-child(7):hover {
+    background-color: #527F79;
+  }
+  
+  .cards-list .card7 .card_image a i {
+    color: #C5BDA6;
+  }
+
+  .cards-list .card:nth-child(8) {
+    background-color: #9C9C9C;
+  }
+  
+  .cards-list .card:nth-child(8):hover {
+    background-color: #4D4D4D;
+  }
+  
+  .cards-list .card8 .card_image a i {
+    color: #9C9C9C;
+  }
+  
+  
+
+  

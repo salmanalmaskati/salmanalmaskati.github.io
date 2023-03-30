@@ -1,4 +1,9 @@
-
+html, body {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+padding: 0;
+}
 .background-image{
     padding: 0;
     margin: 0;
@@ -8,7 +13,7 @@
     background-repeat: no-repeat;
     height: 100vh;
     background-position: center;
-    overflow-x:scroll;
+    overflow: auto;
 }
 
 
@@ -20,17 +25,10 @@
   background-repeat: no-repeat;
   height: 100vh;
   background-position: center;
-  overflow-x: scroll;
+  overflow: auto;
 
 }
 
-.background-image-re{
-  background-image: linear-gradient(to right top, #09203f, #1b3454, #2d4a69, #3f607f, #537895);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
 
 
 
@@ -156,14 +154,3 @@ hr.rounded {
 .col-md-4.col-sm-6{
     height: 90%;
 }
-
-  
-  .overlay h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .overlay p {
-    font-size: 18px;
-    text-align: center;
-  }
