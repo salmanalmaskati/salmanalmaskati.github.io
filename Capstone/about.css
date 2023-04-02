@@ -1,4 +1,25 @@
 body{
-    background-image: url("Pics/hd-wallpaper-g0e564cb87_1280.jpg");
+   
+    background-repeat: no-repeat;
 }
+
+html, body {
+    
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .background-image {
+    padding: 0;
+    margin: 0;
+    background-image: url("Pics/hd-wallpaper-g0e564cb87_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    overflow: auto;
+    overflow-x: hidden;
+  }
   
