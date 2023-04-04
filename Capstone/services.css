@@ -233,7 +233,22 @@ html, body {
   .cards-list .card8 .card_image a i {
     color: #9C9C9C;
   }
+
+  .nav-link{
+    font-family: monospace;
+  }
   
+h1{
+  font-family: monospace;
+}
+
+h6{
+  font-family: monospace;
+}
+
+p{
+  font-family: monospace;
+}
   
 
   
