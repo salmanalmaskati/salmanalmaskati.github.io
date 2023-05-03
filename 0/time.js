@@ -24,7 +24,7 @@ function updateTime() {
     
         datee.style.color = "white";
         datee.style.textAlign = "center";
-        document.body.style.backgroundColor = "#F9DC5C"; 
+     
     
         
     
@@ -41,7 +41,7 @@ function updateTime() {
     
         datee.style.color = "white";
         datee.style.textAlign = "center";
-        document.body.style.backgroundColor = "#F9DC5C"; 
+
 
 
     }
@@ -57,7 +57,7 @@ function updateTime() {
     
         datee.style.color = "white";
         datee.style.textAlign = "center";
-        document.body.style.backgroundColor = "#F9DC5C"; 
+
     
     }
     else if (hour >= 21 || hour <= 4){
@@ -71,7 +71,7 @@ function updateTime() {
     
         datee.style.color = "white";
         datee.style.textAlign = "center";
-        document.body.style.backgroundColor = "#F9DC5C"; 
+   
     
     }
     
