@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-function sum (a,b){
-    return a+b; 
-}
-
-const ans = document.getElementById("h1");
-var final = sum(3,1);
-ans.textContent = (final);
-=======
 const express = require('express');
 const app = express();
 const port = 3000;
@@ -29,7 +20,7 @@ var book = [
 ]
 
 app.get('/', (req, res) => {
-  res.send('<h1 style="color: rgb(114, 114, 114); font-family:monospace; text-align:center"> Salman AlMaskati <br> Home Page </h1> <h3> <a href="/bookinventory/add">Add a book</a> </h3> <br> <h3><a href="/bookinventory/list">List of book</a><h/3> ')
+  res.send('<h1> Salman AlMaskati <br> Home Page </h1> <a href="/bookinventory/add">Add a book</a> <br> <a href="/bookinventory/list">List of book</a> ')
 })
 
 
@@ -92,9 +83,11 @@ async function run() {
   try {
     const db = client.db('tmu');
     const coll = db.collection('Books');
+    // Query
     const query = await coll.find().toArray();
     console.log(query);
   } finally {
+    // Ensures that the client will close when you finish/error
     await client.close();
   }
 }
@@ -104,4 +97,3 @@ run().catch(console.dir);
 app.listen(port, () => {
   console.log(`App listening at http://localhost:${port}`);
 });
->>>>>>> 2bf289b8f601be5a39208665b70428c444347829
