@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+function sum (a,b){
+    return a+b; 
+}
+
+const ans = document.getElementById("h1");
+var final = sum(3,1);
+ans.textContent = (final);
+=======
 const express = require('express');
 const app = express();
 const port = 3000;
@@ -95,3 +104,4 @@ run().catch(console.dir);
 app.listen(port, () => {
   console.log(`App listening at http://localhost:${port}`);
 });
+>>>>>>> 2bf289b8f601be5a39208665b70428c444347829
