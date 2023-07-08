@@ -1,6 +1,7 @@
 const datee= document.getElementById("date")
 
 function updateTime() {
+
     const now = new Date();
 
     const hour = now.getHours();
@@ -8,7 +9,6 @@ function updateTime() {
   
     const timeString = now.toLocaleTimeString();
     const dateString = now.toLocaleDateString();
-  
     datee.textContent = `the time is ${timeString} ${dateString}`;
     
     setTimeout(updateTime, 1000); // Call this function again after 1 second
@@ -71,12 +71,44 @@ function updateTime() {
     
         datee.style.color = "white";
         datee.style.textAlign = "center";
-   
-    
+
+
+
+
+
     }
     
+
     
 }
 
-// Call the function to start updating the time on the page
 updateTime();
+
+
+const now = new Date();
+const hour = now.getHours();
+const minute = now.getMinutes();
+
+const timeString = now.toLocaleTimeString();
+const dateString = now.toLocaleDateString();
+
+
+const Button = document.getElementById("stopwatch");
+function stopwatch() {
+console.log("Button clicked!");
+
+
+const input = prompt("How long would you like the stopwatch to be (seconds)?");
+const inputInt = parseInt(input)
+
+for(i=0;i<inputInt;i++){
+    setTimeout(() => {
+        console.log(i);
+      }, i * 1000);
+    }
+}
+
+
+Button.addEventListener("click", stopwatch);
+
+
