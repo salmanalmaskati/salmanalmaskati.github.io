@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<data>
+    <customer name="Ali" >
+        <email>ali@gmail.com</email>
+        <phone>047 321-1234</phone>
+	        <income>23400344.567</income>
+    </customer>
+    <customer name="Kim" >
+        <email>kim@gmail.com</email>
+	<income>54363744.678</income>
+    </customer>    
+    <customer name="Grace" >
+        <email>grace@gmail.com</email>
+        <phone>047 555-4567</phone>
+	   <income>56789117.456</income>
+    </customer>  
+    <customer name="Dave" >
+        <phone>047 555-6472</phone>
+	<income>54363744.678</income>
+        <address>
+            <street>350 Victoria Street</street>
+        </address>
+    </customer>   
+
+    <customer name="Roger" >
+        <email>roger@ryerson.ca</email>
+        <phone>047 555-4567</phone>
+	  <income>4132454.987</income>
+    </customer>  
+   
+</data>
