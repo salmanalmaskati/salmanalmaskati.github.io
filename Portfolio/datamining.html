@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Data Mining: CPS 844</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="Pics/favicon.ico" >
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+    
+    <link href="port.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+    <nav class="navbar navbar-expand-lg" style="background-color: rgba(240, 248, 255, 0);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color: #EEA47FFF;" >Salman AlMaskati</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="skills.html">Skills</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+         
+         
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+  </header>
+  <main>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+<div class="container">
+  <div class="row">
+    <div style="text-align: center;" class="col-md-12"> 
+      <h1>Data Mining:<br>
+        Forecasting Life Expectancy <a class="btn btn-outline-dark" href="portfolio.html" role="button">Go back</a>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Objective:</h3>
+      <p>This project aims to tackle a challenging regression problem focused on predicting life expectancy. Life expectancy is a critical indicator of the overall health and well-being of a population, and accurately predicting it can have far-reaching implications for public health, social policies, and resource allocation.
+        <br>The key steps of the project involve data cleaning, visualizations, Clustering, feature selection and PCA, Web scraping, model training and evaluation. Several regression learning algorithms will be explored and compared to find the best-performing model.</p>
+      <a href="project.pdf"> <p> For a more in depth report please click here</p> </a>
+      
+
+      <style>
+        table {
+          font-family: Arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        th, td {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        th {
+          background-color: #f2f2f200;
+        }
+      </style>
+      </head>
+      <body>
+      
+      <h2>Model Performance Summary</h2>
+      <h6><b>Note: ODF </b>is the dataframe after cleaning, <b>PCA DF</b> is the dataframe after applying PCA</h6>
+      
+      <table>
+        <tr>
+          <th>Model</th>
+          <th>MAE</th>
+          <th>MSE</th>
+          <th>RMSE</th>
+        </tr>
+        <tr>
+          <td>Linear Regression (ODF)</td>
+          <td>3.26</td>
+          <td>73.35</td>
+          <td>8.56</td>
+        </tr>
+        <tr>
+          <td>Linear Regression (PCA DF)</td>
+          <td>7.03</td>
+          <td>169.22</td>
+          <td>13.01</td>
+        </tr>
+        <tr>
+          <td>SVM (ODF NO SCALING)</td>
+          <td>5.89</td>
+          <td>55.82</td>
+          <td>7.47</td>
+        </tr>
+        <tr>
+          <td>SVM (ODF With SCALING)</td>
+          <td>3.26</td>
+          <td>73.35</td>
+          <td>8.56</td>
+        </tr>
+        <tr>
+          <td>SVM (PCA DF NO SCALING)</td>
+          <td>7.03</td>
+          <td>169.22</td>
+          <td>13.01</td>
+        </tr>
+        <tr>
+          <td>SVM (PCA DF With SCALING)</td>
+          <td>7.03</td>
+          <td>169.22</td>
+          <td>13.01</td>
+        </tr>
+        <tr>
+          <td>KNN (ODF)</td>
+          <td>5.56</td>
+          <td>46.59</td>
+          <td>6.60</td>
+        </tr>
+        <tr>
+          <td>KNN (PCA DF)</td>
+          <td>5.56</td>
+          <td>46.78</td>
+          <td>6.62</td>
+        </tr>
+        <tr>
+          <td>DT (ODF)</td>
+          <td>3.00</td>
+          <td>16.05</td>
+          <td>4.01</td>
+        </tr>
+        <tr>
+          <td>DT (PCA DF)</td>
+          <td>4.50</td>
+          <td>37.09</td>
+          <td>6.09</td>
+        </tr>
+        <tr>
+          <td>Random Forest (ODF)</td>
+          <td>2.05</td>
+          <td>7.86</td>
+          <td>2.80</td>
+        </tr>
+        <tr>
+          <td>Random Forest (PCA DF)</td>
+          <td>3.70</td>
+          <td>25.11</td>
+          <td>5.01</td>
+        </tr>
+      </table>
+
+    </div>
+
+
+    <div class="col-md-6">
+      <h3>Highlights of the project:</h3>
+      <ul>
+          <li> <b> Data Cleaning:</b> Preprocessing the dataset to ensure data quality and consistency.</li>
+      
+              <li> <b>Visualizations:</b> Utilizing visual representations to gain insights into the data's characteristics.</li>
+              
+             <li> <b>Clustering: </b>Exploring data clusters to identify potential patterns. </li>
+              
+             <li><b>Feature Selection and PCA:</b> Reducing dimensionality and selecting essential features for model training. </li>
+              
+              <li><b>Model Training and Evaluation: </b>Employing various regression algorithms and assessing their performance./li>
+      </ul>
+
+      <h3> Code Snippet</h3>
+      <code id="code">
+        from sklearn.preprocessing import StandardScaler<br>
+        scaler = StandardScaler()<br>
+        X_scaled = scaler.fit_transform(X)<br>
+        rfecv = RFECV(estimator=logit, step=1, cv=StratifiedKFold(10), scoring='accuracy')<br>
+        rfecv.fit(X_scaled, y)<br>
+        print(f"Optimal number of features : {rfecv.n_features_}")<br>
+        selected_features= X.columns[rfecv.support_]<br>
+        print("Selected Features: ",selected_features)<br>
+        #create a df using the selected features<br>
+        selected_features_df = X[selected_features]<br>
+        selected_features_df<br>
+
+      </code>
+<br>
+      <h3>Visualizations</h3>
+      <img style="height: 300px; width: 300px;" src="Pics/dendrogram.png">
+      <img style="height: 300px; width: 300px;" src="Pics/scatter1.png">
+      <img style="height: 300px; width: 300px;" src="Pics/scatter2.png">
+      <img style="height: 300px; width: 300px;" src="Pics/corr.png">
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+</body>
+
+</html>
