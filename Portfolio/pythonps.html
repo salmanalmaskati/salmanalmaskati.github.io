@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Python Problem Set</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="Pics/favicon.ico" >
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+    
+    <link href="port.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+    <nav class="navbar navbar-expand-lg" style="background-color: rgba(240, 248, 255, 0);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color: #EEA47FFF;" >Salman AlMaskati</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="skills.html">Skills</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+         
+         
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+  </header>
+  <main>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+<div class="container">
+  <div class="row">
+    <div style="text-align: center;" class="col-md-12"> 
+      <h1>Python Problem Set<br>
+         <a class="btn btn-outline-dark" href="portfolio.html" role="button">Go back</a>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Objective:</h3>
+      <p>My objective in completing the Python problem set comprising 37 questions was to showcase my proficiency and expertise in Python programming and problem-solving. By successfully solving these diverse challenges, I aimed to demonstrate my ability to tackle a wide range of programming tasks, validate my strong coding skills, and reinforce my comprehensive understanding of Python. This achievement reflects my commitment to continuous learning and the mastery of Python as a versatile tool for problem-solving and software development.</p>
+      <a href="poblem_set_with_answers.pdf"> <p> To take a look at the problem set and the answers please click here</p> </a>
+      <a class="btn btn-outline-light" href="https://drive.google.com/file/d/1CnTXtbEiX52VxcvTNXaOc08CJPWna91F/view?usp=drive_link" role="button">Download Folder</a>
+      <h6><b>Note: To run the tester download the folder and run "tester109.py", to view the code in your preferred IDE open "labs109.py" file. </b></h6>
+
+
+      </head>
+      <body>
+      
+      <h2>Results</h2>
+      <img style="height: 600px; width: 600px;" src="Pics/pythonps.png">
+
+    </div>
+
+
+    <div class="col-md-6">
+      <h3>Highlights of the project:</h3>
+      <ul>
+          <li> <b> Diverse Problem Solving: </b> Successfully addressed 40 different programming challenges, showcasing adaptability and problem-solving skills across various domains of Python programming. </li>
+      
+              <li> <b>Coding Proficiency:</b> Demonstrated a high level of coding proficiency by providing accurate and efficient solutions to each question in the problem set.</li>
+                            
+             <li><b>Versatility:</b> Proved the ability to handle a wide range of programming tasks, from fundamental concepts to more complex problem-solving scenarios. </li>
+             
+             <li><b>Efficient Performance:</b> All functions within the project were optimized to run with exceptional efficiency, ensuring that they executed in under 11 seconds. This commitment to performance optimization demonstrates a strong emphasis on resource efficiency and responsiveness.</li>
+
+      </ul>
+
+      <h3> Code Snippet</h3>
+      <code id="code">
+        def count_carries(a, b):<br>
+        count=0<br>
+        carry=0<br>
+        maxi=max(a,b)<br>
+        mini=min(a,b)<br>
+        &nbsp; while mini>0 or carry>0:<br>
+        &nbsp;&nbsp;x=mini%10<br>
+        &nbsp;&nbsp;y=maxi%10<br>
+        &nbsp;&nbsp;total=x+y+carry<br>
+        &nbsp;&nbsp;if total>9:<br>
+        &nbsp;&nbsp;&nbsp;count+=1<br>
+        &nbsp;&nbsp;&nbsp;carry=total//10<br>
+        &nbsp;&nbsp;else:<br>
+        &nbsp;&nbsp;&nbsp;carry=0<br>
+        &nbsp;&nbsp;mini//=10<br>
+        &nbsp;&nbsp;maxi//=10<br>
+        &nbsp;return count<br>
+
+      </code>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+</body>
+
+</html>
