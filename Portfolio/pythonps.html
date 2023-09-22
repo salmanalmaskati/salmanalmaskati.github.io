@@ -107,8 +107,12 @@
 
       </ul>
 
-      <h3> Code Snippet</h3>
-      <code id="code">
+      <h3> Solution Snippet</h3>
+      <h5 style="text-align: left;">Problem:</h5> 
+      <h6 style="text-align: left;">Two positive integers a and b can be added with the usual integer column-wise addition algorithm that we all learned as wee little children so early that most people don't even think of that mechanistic operation as an algorithm! Instead of the sum a+b that the language would already compute for you anyway, this problem asks you to count how many times there will be a carry of one into the next column during this mechanistic addition. Your function should be ef0icient even for behemoths that consist of thousands of digits.<br>
+        To extract the lowest digit of a positive integer n, use the expression n%10. To extract all other digits except the lowest one, use the expression n//10. You can use these simple integer arithmetic operations to traipse through the steps of the column-wise integer addition where you don't care about the actual result of the addition, but only tally up the carries produced in each column as proof of work of you actually labouring through the steps of the column-wise addition.</h6>
+      <h5 style="text-align: left;"> Solution:</h5>
+        <code id="code">
         def count_carries(a, b):<br>
         count=0<br>
         carry=0<br>
@@ -126,6 +130,8 @@
         &nbsp;&nbsp;mini//=10<br>
         &nbsp;&nbsp;maxi//=10<br>
         &nbsp;return count<br>
+        <br>
+        <br>
 
       </code>
 
