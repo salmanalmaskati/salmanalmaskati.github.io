@@ -1,6 +1,6 @@
 
 let text= "Salman AlMaskati "
-let text2 ="Data Scientist / Data Analyst"
+let text2 ="Portfolio"
 let text3 = "Github URL: https://github.com/salmanalmaskati"
 let imageURL=[
     "https://cdn-icons-png.flaticon.com/512/25/25231.png",
