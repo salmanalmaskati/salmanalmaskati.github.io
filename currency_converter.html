@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Currency Exchange</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  
+    <style>
+        body{
+            background-color:#9773fe;
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 500px; /* Adjust the width as needed */
+            margin: 0 auto; /* Center the container */
+            color: cadetblue;
+        }
+
+        .card-body {
+            text-align: center;
+            width: 100%;
+            background-color:rgb(255, 255, 255);
+            
+        }
+
+    </style>
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+    
+
+
+
+    <div class="container card-container">
+        <div class="card">
+            <div class="card-body">
+                <h1 style="font-family: monospace;">Currency Converter</h1>
+                <input type="number" id="input" placeholder="Enter Amount" style="font-family: monospace;">
+                <select id="dropdown1" style="font-family: monospace;"> </select>
+                <select name="currencies" id="dropdown2"style="font-family: monospace;"> </select>
+                <button id="convert"  class="btn btn-success" onclick="convert()" style="font-family: monospace;"> Convert </button>
+                <h3 id="converstion" style="font-family: monospace;"></h3>
+            </div>
+        </div>
+    </div>
+                     
+
+
+                              
+
+
+
+  
+    </script>
+
+
+
+
+
+
+  
+  
+  <script>
+
+        var selected1
+        var selected2
+
+        function populate1() {
+            var dropdown1 = document.getElementById('dropdown1');
+
+            // Using jQuery to fetch JSON data
+            $.getJSON('https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies.json', function(cur_data) {
+                var cur_keys = Object.keys(cur_data);
+
+                // Clear existing options in the dropdown
+                dropdown1.innerHTML = "";
+
+                // Loop through the currency keys and create options
+                cur_keys.forEach(function(key) {
+                    var option = document.createElement("option");
+                    option.value = key;
+                    option.text = key;
+                    dropdown1.appendChild(option);
+                });
+            });
+            dropdown1.addEventListener('change', function() {
+                // Log the selected value when the selection changes
+                var selected1 = dropdown1.value;
+                console.log(selected1);
+            });
+        }
+
+        // Call the populate function to fetch and populate the dropdown
+
+        populate1();
+        
+        function populate2() {
+            var dropdown2 = document.getElementById('dropdown2');
+
+            // Using jQuery to fetch JSON data
+            $.getJSON('https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies.json', function(cur_data) {
+                var cur_keys = Object.keys(cur_data);
+
+                // Clear existing options in the dropdown
+                dropdown2.innerHTML = "";
+
+                // Loop through the currency keys and create options
+                cur_keys.forEach(function(key) {
+                    var option = document.createElement("option");
+                    option.value = key;
+                    option.text = key;
+                    dropdown2.appendChild(option);
+                });
+            });
+            dropdown2.addEventListener('change', function() {
+                // Log the selected value when the selection changes
+                var selected2 = dropdown2.value;
+                console.log(selected2);
+            });
+        }
+
+        // Call the populate function to fetch and populate the dropdown
+
+        populate2();
+
+    
+    
+    function convert(){
+        var selected1 = dropdown1.value;
+        var selected2 = dropdown2.value;
+        var url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${encodeURIComponent(selected1)}/${encodeURIComponent(selected2)}.json`
+        //window.open(url,'_blank')
+        console.log(url)
+
+
+        $.getJSON(url, function(data) {
+        console.log(data);
+        
+        
+        
+        var keys= Object.keys(data)
+        var value=Object.values(data)
+        // Currency code
+        var cur=keys[1]
+        console.log(cur)
+
+        //Exchange Rate
+        var rate=value[1]
+        console.log(rate)
+        
+
+        var convert=document.getElementById('converstion')
+        var inp=document.getElementById('input').value
+        console.log(inp)
+        result= rate*inp
+        convert.innerText= inp + selected1.toUpperCase() + ' = ' + result + selected2.toUpperCase() 
+        })
+
+
+
+        
+    }
+
+  </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
