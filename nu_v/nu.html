@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Nu</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+
+        <style>        
+            .wrapper {
+                text-align: center;
+            }
+
+            #no_b {
+                position: absolute;
+                top: 50%;
+                
+            }
+
+            #yes_b{
+                position: absolute;
+                top:50%;
+                left:45%
+                
+            }
+
+            #pic{
+                height: 200px;
+                width:200px
+            }
+            body{
+                
+                background: linear-gradient(90deg, rgba(187,168,255,1) 0%, rgba(205,194,245,1) 50%, rgba(230,225,249,1) 100%);
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main></main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+
+
+
+        
+        
+        <div class="wrapper">
+            <img id="pic" src="cat.png">
+            <h1 style="font-family: 'Courier New', Courier, monospace; color: rgb(255, 0, 212);">Will you be my valentine?</h2>
+            
+            <button onclick="yes()" id= "yes_b"type="button" class="btn btn-success">Yes</button>
+            <button onclick="move()" id="no_b" type="button" class="btn btn-outline-danger">No</button> 
+            
+            
+        </div>
+        
+
+        <script>
+            var i = 0
+            var width = 70
+            var height = 70
+            function move(){
+                var n_b = document.getElementById("no_b")
+                console.log("123")
+                var pic=document.getElementById("pic")
+
+                var new_top = Math.floor(Math.random() * 50)
+                var new_left = Math.floor(Math.random() * 50)
+                n_b.style.top = new_top + "%";
+                n_b.style.left = new_left + "%"
+                
+                var text=["pls papa", "r u sure?", "what if i ask nicely?", "cuh u pls b my valintin", "CLICK YES"]
+                n_b.innerText= text[i]
+
+                var y_b = document.getElementById("yes_b")
+
+                var new_width= width + 40                
+                y_b.style.width = new_width + "px"
+                width = new_width
+
+                var new_height= height + 40
+                height = new_height
+                y_b.style.height = new_height + "px"
+                
+                var new_src = ["cat1.png","cat2.jpg","cat3.jpeg","cat4.webp"] 
+                pic.src = new_src[i]
+                i++;
+                console.log(i)
+
+                if (i > new_src.length){
+                    i=0
+                    pic.src="cat5.jpeg"
+                }
+            }
+            x=0
+            function yes(){
+                var pic=document.getElementById("pic")
+                
+                var new_src = ["happy-cat.gif"] 
+                pic.src = new_src[x]
+                i++;
+                console.log(x)
+
+
+            }
+
+            
+
+            
+            
+
+        </script>
+
+    </body>
+</html>
